@@ -1,0 +1,50 @@
+@import '../common/color.scss';
+
+.hkex-container {
+  .el-input input {
+    border-color: $--color-blue;
+    border-radius: 0;
+  }
+
+  .el-message-box {
+    .el-button--default {
+      &:hover {
+        background-color: #fff;
+        border-color: $--color-primary;
+        color: $--color-primary;
+      }
+    }
+
+    .el-button--primary {
+      background-color: $--color-brown;
+      border-color: $--color-brown;
+
+      &:hover {
+        background-color: $--color-brown;
+        border-color: $--color-brown;
+        color: #fff;
+      }
+    }
+  }
+
+  .el-pagination {
+    .el-input__inner {
+      color: rgba($--color-black, 0.6);
+      border-color: rgba($--color-black, 0.6);
+    }
+
+    .el-input__suffix {
+      .el-input__icon {
+        &:before {
+          color: $--color-grey;
+        }
+      }
+    }
+  }
+}
+
+.el-notification__content {
+  p {
+    text-align: initial;
+  }
+}

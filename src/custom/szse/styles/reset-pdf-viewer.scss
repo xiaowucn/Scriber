@@ -1,0 +1,48 @@
+::v-deep .document-viewer-toolbar {
+  .left {
+    .toolbar-back,
+    .toolbar-thumb,
+    .toolbar-fileinfo {
+      display: none;
+    }
+  }
+
+  .right {
+    margin-right: 200px;
+  }
+}
+
+::v-deep .image-viewer-header {
+  .header-left {
+    li {
+      &.fa-arrow-left,
+      &.fa-images,
+      &:last-child {
+        display: none;
+      }
+    }
+  }
+}
+
+::v-deep .draw-widget-switch-container {
+  .draw-widget-switch {
+    top: 20px;
+    right: 50px;
+    flex-direction: row;
+    z-index: 300;
+
+    button {
+      transform: scale(0.7);
+      border-radius: 5px;
+      background-color: #eaeaea;
+
+      &.active {
+        background-color: #409eff;
+      }
+
+      &.fa-table {
+        margin: 0;
+      }
+    }
+  }
+}

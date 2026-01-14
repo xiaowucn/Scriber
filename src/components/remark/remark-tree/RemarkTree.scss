@@ -1,0 +1,307 @@
+$itemSelectedBGColor: #d4f2fc;
+$itemHoverBGColor: tint($itemSelectedBGColor);
+$itemBorderColor: darken($itemSelectedBGColor, 5%);
+$iconPlaceholderWidth: 17px;
+
+.remark-tree-list {
+  height: 100%;
+  overflow: auto;
+
+  background-color: #f0f4f7;
+  ul {
+    &[data-depth='0'] {
+      padding: 10px 0 0 0;
+      .answer-header {
+        background-color: inherit;
+      }
+    }
+    &[data-depth='1'] {
+      .answer-item {
+        margin: 5px;
+        padding: 5px;
+        background-color: #fff;
+        border-radius: 5px;
+      }
+    }
+    &[data-depth='2'] {
+      width: calc(100% - 20px);
+      margin-top: 5px;
+      padding: 5px 0px 5px 30px;
+      background-color: #f0f4f7;
+      border-radius: 5px;
+      box-sizing: border-box;
+      > .answer-item-operation-btn {
+        right: -22px;
+      }
+    }
+    &[data-depth='3'] {
+      padding: 5px 5px 5px 30px;
+      background-color: #f0f4f7;
+      .answer-item {
+        border-radius: 5px;
+      }
+    }
+  }
+
+  li.is-selected {
+    background: $itemSelectedBGColor;
+  }
+
+  .answer-header {
+    display: flex;
+    align-items: baseline;
+    border-radius: 5px;
+    background-color: #fff;
+
+    .icon-placeholder {
+      display: inline-block;
+      width: $iconPlaceholderWidth;
+
+      .answer-header-icon {
+        transition: all 0.15s ease-in;
+
+        &.is-opened {
+          transform: rotate(90deg);
+        }
+      }
+    }
+  }
+
+  .first-node .second-node.add-answer {
+    .answer-name {
+      color: #00ff00 !important;
+    }
+  }
+
+  .first-node .second-node.diff-answer {
+    .answer-name {
+      color: red !important;
+    }
+  }
+
+  .answer-item {
+    list-style: none;
+    border: 1px solid rgba(0, 0, 0, 0);
+
+    &.add-answer .node-sticky {
+      .answer-name {
+        color: #00ff00 !important;
+      }
+    }
+
+    &.diff-answer .node-sticky {
+      .answer-name {
+        color: red !important;
+      }
+    }
+
+    &.schema-node-selected {
+      background: $itemSelectedBGColor !important;
+      border: 1px solid #76ddff;
+      > .answer-header {
+        background: $itemSelectedBGColor !important;
+      }
+    }
+
+    & > .answer-header:hover {
+      background: $itemHoverBGColor;
+    }
+
+    .answer {
+      .answer-items-text {
+        margin-left: $iconPlaceholderWidth;
+      }
+    }
+
+    .pagination-wrapper {
+      padding-right: 20px;
+      text-align: right;
+    }
+
+    .can-cloned {
+      position: relative;
+      min-height: 80px;
+      margin: 5px 20px 0px 0px;
+      background: #f6f6f6;
+
+      .toggle-group-arrow {
+        cursor: pointer;
+        transition: all 0.3s;
+        transform: rotate(90deg);
+        margin: -1px 5px 0 0;
+        vertical-align: middle;
+        color: #606266;
+        &:hover {
+          color: $--color-primary;
+        }
+      }
+
+      &.collapsed {
+        &::before {
+          content: '已被折叠，点击左侧箭头展开';
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          position: absolute;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          background-color: #f5f5f5;
+          color: #bdbdbd;
+          text-align: center;
+          font-size: 12px;
+        }
+        .toggle-group-arrow {
+          transform: rotate(0);
+        }
+        .answer-item-operation-btn,
+        .answer-create-inline,
+        .answer-item {
+          display: none;
+        }
+      }
+
+      .answer-index {
+        position: absolute;
+        left: 5px;
+        top: 5px;
+        width: 28px;
+        padding-top: 3px;
+        text-align: center;
+        list-style: none;
+        .el-checkbox {
+          display: block;
+          margin-right: 5px;
+          text-align: right;
+        }
+      }
+
+      .index-number {
+        width: 100%;
+        font-size: 14px;
+        font-weight: bold;
+        color: #606266;
+
+        &.is-new {
+          &::after {
+            content: '';
+            position: absolute;
+            right: 2px;
+            top: 2px;
+            display: block;
+            width: 6px;
+            height: 6px;
+            border-radius: 3px;
+            background-color: red;
+          }
+        }
+      }
+
+      .answer-item-operation-btn {
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        right: -23px;
+
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 7px;
+
+        span {
+          display: block;
+          padding: 2px;
+          border-radius: 4px;
+          &:hover {
+            background: #ebf4ff;
+          }
+        }
+
+        i {
+          color: #f56c6c;
+        }
+      }
+
+      & [data-depth='3'] {
+        &:not(:last-of-type) {
+          border-bottom: 1px solid #dbdbdb;
+        }
+
+        .answer-create-inline {
+          background: #f6f6f6;
+        }
+      }
+    }
+
+    .node-sticky {
+      position: sticky;
+      top: 0;
+      right: 0;
+      z-index: 3;
+      background: #fff;
+    }
+
+    .node-sticky-2 {
+      position: sticky;
+      top: 29px;
+      right: 0;
+      z-index: 2;
+    }
+
+    &.schema-node-exclude,
+    .schema-node-collapse {
+      display: none;
+      margin: 0;
+      padding: 0;
+      height: 0;
+      overflow: hidden;
+    }
+  }
+
+  .answer-create-inline {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    width: 100%;
+    height: 32px;
+    text-align: center;
+    list-style: none;
+
+    .create-trigger {
+      flex: 1;
+      margin: 4px 0;
+      font-size: 20px;
+      transform: scale(0);
+      opacity: 0;
+      transition: all ease 0.2s;
+
+      &:hover {
+        &:before {
+          color: grey;
+        }
+      }
+    }
+
+    .table-remark-trigger {
+      padding: 2px 5px;
+      font-size: 12px;
+      margin: 0 5px;
+    }
+
+    > .el-button {
+      visibility: hidden;
+    }
+
+    &:hover {
+      .create-trigger {
+        opacity: 1;
+        transform: scale(1);
+      }
+      > .el-button {
+        visibility: visible;
+      }
+    }
+  }
+}

@@ -1,0 +1,46 @@
+/**
+*  Global styles
+*/
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: #fff !important;
+  overscroll-behavior: none; /* 去除 macOS 系统下页面滚动条的“触底反弹”效果 */
+}
+
+.page-header {
+  margin: 25px 0;
+}
+
+/* 中信建投 CSC */
+.button-csc {
+  background: rgb(222, 245, 245);
+  border: none;
+  color: rgb(67, 113, 153);
+}
+
+.button-csc:hover {
+  background: rgb(201, 239, 239);
+  color: rgb(67, 113, 153);
+}
+
+.check-version-message {
+  .el-message__icon {
+    margin-right: 5px;
+  }
+  .el-message__content {
+    :is(a) {
+      color: #409eff;
+      text-decoration: none;
+    }
+  }
+  .btn-reload {
+    background: none;
+    border: none;
+    color: #409eff;
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,6 @@
+VITE_DIST=CSC
+VITE_FAVICON=csc-favicon.ico
+VITE_TITLE=智能文档信息抽取
+
+VITE_PROXY_TARGET=http://100.64.0.5:44003
+#admin/4OVRpELVvnC1

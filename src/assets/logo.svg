@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="184" height="76" viewBox="0 0 184 76">
+    <defs>
+        <linearGradient id="a" x1=".731%" y1=".731%" y2="100%">
+            <stop offset="0%" stop-color="#297FA9"/>
+            <stop offset="100%" stop-color="#196A91"/>
+        </linearGradient>
+        <radialGradient id="c" cy="18.822%" r="65.94%" fx="50%" fy="18.822%">
+            <stop offset="0%" stop-color="#FFF" stop-opacity=".5"/>
+            <stop offset="100%" stop-opacity=".5"/>
+        </radialGradient>
+        <rect id="b" width="58.537" height="58.537" x="10.732" y="10.732" rx="7.805"/>
+        <linearGradient id="d" x1="101.5%" x2=".5%" y1="-.5%" y2="101.5%">
+            <stop offset="0%" stop-color="#25C0CA"/>
+            <stop offset="100%" stop-color="#1170B4"/>
+        </linearGradient>
+        <linearGradient id="g" x1="50%" x2="50%" y1="0%" y2="100%">
+            <stop offset="0%" stop-color="#FFF"/>
+            <stop offset="100%" stop-color="#B0DEF9"/>
+        </linearGradient>
+        <path id="f" d="M33.174 46.296c.205 1.476.606 2.579 1.205 3.309 1.096 1.33 2.973 1.994 5.632 1.994 1.592 0 2.885-.175 3.879-.526 1.884-.672 2.826-1.92 2.826-3.747 0-1.066-.467-1.892-1.402-2.476-.935-.57-2.403-1.074-4.405-1.512l-3.418-.767c-3.36-.76-5.683-1.585-6.968-2.476-2.177-1.49-3.265-3.82-3.265-6.99 0-2.893 1.051-5.296 3.155-7.21 2.104-1.914 5.193-2.87 9.27-2.87 3.403 0 6.307.901 8.71 2.706 2.403 1.804 3.663 4.422 3.78 7.856h-6.486c-.117-1.943-.965-3.324-2.542-4.142-1.052-.54-2.36-.81-3.923-.81-1.738 0-3.126.35-4.163 1.051-1.038.701-1.556 1.68-1.556 2.936 0 1.154.511 2.016 1.534 2.586.657.38 2.06.825 4.207 1.337l5.566 1.336c2.44.585 4.28 1.366 5.522 2.345 1.928 1.52 2.893 3.718 2.893 6.596 0 2.951-1.129 5.402-3.386 7.352-2.257 1.95-5.445 2.925-9.565 2.925-4.207 0-7.516-.96-9.927-2.881-2.41-1.921-3.615-4.562-3.615-7.922h6.442z"/>
+        <filter id="e" width="175.5%" height="158.7%" x="-37.7%" y="-23.5%" filterUnits="objectBoundingBox">
+            <feOffset dy="2" in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="3"/>
+            <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.5 0"/>
+        </filter>
+        <filter id="h" width="149.1%" height="138.2%" x="-24.5%" y="-13.2%" filterUnits="objectBoundingBox">
+            <feGaussianBlur in="SourceAlpha" result="shadowBlurInner1" stdDeviation=".5"/>
+            <feOffset in="shadowBlurInner1" result="shadowOffsetInner1"/>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" k2="-1" k3="1" operator="arithmetic" result="shadowInnerInner1"/>
+            <feColorMatrix in="shadowInnerInner1" values="0 0 0 0 0.999229379 0 0 0 0 0.807768698 0 0 0 0 0.530761754 0 0 0 1 0"/>
+        </filter>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <g transform="translate(-2 -2)">
+            <g transform="rotate(-30 40 40)">
+                <use fill="url(#a)" xlink:href="#b"/>
+                <use fill="url(#c)" fill-opacity=".8" style="mix-blend-mode:soft-light" xlink:href="#b"/>
+            </g>
+            <rect width="58.537" height="58.537" x="10.732" y="10.732" fill="url(#d)" fill-opacity=".9" rx="7.805" transform="rotate(-15 40 40)"/>
+            <use fill="#000" filter="url(#e)" xlink:href="#f"/>
+            <use fill="#FFF" xlink:href="#f"/>
+            <use fill="url(#g)" xlink:href="#f"/>
+            <use fill="#000" filter="url(#h)" xlink:href="#f"/>
+        </g>
+        <text fill="#3E3F42" font-family="PingFangSC-Medium, PingFang SC" font-size="26" font-weight="400" transform="translate(-2 -2)">
+            <tspan x="100" y="33">Scriber</tspan>
+        </text>
+        <text fill="#3E3F42" font-family="PingFangSC-Medium, PingFang SC" font-size="18" font-weight="400" transform="translate(-2 -2)">
+            <tspan x="100" y="61">庖丁科技</tspan>
+        </text>
+    </g>
+</svg>

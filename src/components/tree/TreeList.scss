@@ -1,0 +1,106 @@
+$line-height: 3em;
+$icon-width: 1.2em;
+$border-color: teal;
+
+.schema-tree-list {
+  max-width: none;
+  overflow-x: auto;
+  overflow-y: hidden;
+
+  * {
+    transition: all 0.3s;
+  }
+
+  ul,
+  li {
+    margin: 0;
+    padding: 0 0 0 1em;
+    list-style-type: none;
+  }
+  & > ul,
+  & > ul > li {
+    padding: 0;
+  }
+
+  &.schema-tree-draggable {
+    .node:not([data-depth='0']) {
+      cursor: move;
+    }
+  }
+
+  .node {
+    position: relative;
+    height: $line-height;
+    line-height: $line-height;
+    cursor: default;
+    user-select: none;
+    &:hover {
+      background: rgba(64, 158, 255, 0.1);
+    }
+  }
+  .node-icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    width: $icon-width;
+  }
+  .node-label {
+    padding-left: 1em;
+  }
+  ul > .node-draggable {
+    & > li {
+      position: relative;
+    }
+    & > li:not(.has-children) {
+      height: $line-height;
+    }
+    & > li:first-child::before {
+      $offset-height: 1em;
+      height: calc(#{$line-height} - #{$offset-height} / 2);
+      top: -$offset-height;
+    }
+    // 取消tree末尾项的左侧竖线
+    & > li:last-child {
+      & > div.tree-node-wrapper {
+        & > ul > .node-draggable::after {
+          content: none;
+        }
+      }
+    }
+    & > li::before {
+      content: ' ';
+      position: absolute;
+      width: 2.2em;
+      height: $line-height;
+      top: -1.5em;
+      left: -0.6em;
+      border-left: 1px dashed $border-color;
+      border-bottom: 1px dashed $border-color;
+      pointer-events: none;
+    }
+    & > li.has-children::before {
+      width: 1.2em;
+    }
+    &::after {
+      content: ' ';
+      position: absolute;
+      top: 1.5em;
+      left: -0.6em;
+      margin-top: -2px;
+      border-left: 1px dashed $border-color;
+      height: calc(100% - #{$line-height});
+      width: 1px;
+    }
+    .sortable-ghost {
+      border-bottom: 1px solid #ccc;
+    }
+  }
+  li[data-depth='0'] {
+    & > div.tree-node-wrapper {
+      & > ul > .node-draggable::after {
+        content: none;
+      }
+    }
+  }
+}

@@ -1,0 +1,276 @@
+export const ruleDetail = {
+  status: 'ok',
+  data: {
+    type: 4,
+    items: [
+      {
+        headline: 'Monthly Return',
+        url:
+          'http://www3.hkexnews.hk/listedco/listconews/GEM/2013/0204/GLN20130204153.pdf',
+        file_id: 356,
+        release_time: 1359986700,
+        result: {
+          items: ['warrants', 'convertiables'],
+          warrants: {
+            headers: [
+              'Description_of_warrants',
+              'Currency_of_nominal_value',
+              'Nominal_value_at_close_of_preceding_month',
+              'Exercised_during_the_month',
+              'Nominal_value_at_close_of_the_month',
+              'No_of_new_shares_of_issuer_issued_during_the_month_pursuant_thereto',
+              'No_of_new_shares_of_issuer_which_may_be_issued_pursuant_thereto_as_at_close_of_the_month',
+              'Date_of_expiry',
+              'Stock_code',
+              'Class_of_shares_issuable',
+              'Subscription_price',
+              'EGM_approval_date',
+              'Ordinary_shares',
+              'Preference_shares',
+              'Other_class',
+            ],
+            index: [0, 1],
+            records: [
+              {
+                Date_of_expiry: '02/04/2015',
+                Description_of_warrants:
+                  'Warrants (as defined in the circular of the Company dated 8 February 2012)',
+                Currency_of_nominal_value: 'HKD',
+                Nominal_value_at_close_of_preceding_month: '10902200',
+                Exercised_during_the_month: 'Nil',
+                Nominal_value_at_close_of_the_month: '10902200',
+                No_of_new_shares_of_issuer_issued_during_the_month_pursuant_thereto:
+                  'Nil',
+                No_of_new_shares_of_issuer_which_may_be_issued_pursuant_thereto_as_at_close_of_the_month:
+                  '57380000',
+                Stock_code: 'Nil',
+                Class_of_shares_issuable: 'Ordinary',
+                Subscription_price: 'HK$0.19',
+                EGM_approval_date: '24/02/2012',
+                Ordinary_shares: 'N/A',
+                Preference_shares: 'N/A',
+                Other_class: 'N/A',
+              },
+              {
+                Date_of_expiry: '02/04/2015',
+                Description_of_warrants:
+                  'Warrants (as defined in the circular of the Company dated 8 February 2012)',
+                Currency_of_nominal_value: 'HKD',
+                Nominal_value_at_close_of_preceding_month: '10902200',
+                Exercised_during_the_month: 'Nil',
+                Nominal_value_at_close_of_the_month: '10902200',
+                No_of_new_shares_of_issuer_issued_during_the_month_pursuant_thereto:
+                  'Nil',
+                No_of_new_shares_of_issuer_which_may_be_issued_pursuant_thereto_as_at_close_of_the_month:
+                  '57380000',
+                Stock_code: 'Nil',
+                Class_of_shares_issuable: 'Ordinary',
+                Subscription_price: 'HK$0.19',
+                EGM_approval_date: '24/02/2012',
+                Ordinary_shares: 'N/A',
+                Preference_shares: 'N/A',
+                Other_class: 'N/A',
+              },
+            ],
+          },
+          convertiables: {
+            headers: [
+              'Description_of_warrants',
+              'Currency_of_nominal_value',
+              'Nominal_value_at_close_of_preceding_month',
+              'Exercised_during_the_month',
+              'Nominal_value_at_close_of_the_month',
+              'No_of_new_shares_of_issuer_issued_during_the_month_pursuant_thereto',
+              'No_of_new_shares_of_issuer_which_may_be_issued_pursuant_thereto_as_at_close_of_the_month',
+              'Date_of_expiry',
+              'Stock_code',
+              'Class_of_shares_issuable',
+              'Subscription_price',
+              'EGM_approval_date',
+              'Ordinary_shares',
+              'Preference_shares',
+              'Other_class',
+            ],
+            index: 0,
+            records: [
+              {
+                Date_of_expiry: '02/04/2015',
+                Description_of_warrants:
+                  'Warrants (as defined in the circular of the Company dated 8 February 2012)',
+                Currency_of_nominal_value: 'HKD',
+                Nominal_value_at_close_of_preceding_month: '10902200',
+                Exercised_during_the_month: 'Nil',
+                Nominal_value_at_close_of_the_month: '10902200',
+                No_of_new_shares_of_issuer_issued_during_the_month_pursuant_thereto:
+                  'Nil',
+                No_of_new_shares_of_issuer_which_may_be_issued_pursuant_thereto_as_at_close_of_the_month:
+                  '57380000',
+                Stock_code: 'Nil',
+                Class_of_shares_issuable: 'Ordinary',
+                Subscription_price: 'HK$0.19',
+                EGM_approval_date: '24/02/2012',
+                Ordinary_shares: 'N/A',
+                Preference_shares: 'N/A',
+                Other_class: 'N/A',
+              },
+              {
+                Date_of_expiry: '02/04/2015',
+                Description_of_warrants:
+                  'Warrants (as defined in the circular of the Company dated 8 February 2012)',
+                Currency_of_nominal_value: 'HKD',
+                Nominal_value_at_close_of_preceding_month: '10902200',
+                Exercised_during_the_month: 'Nil',
+                Nominal_value_at_close_of_the_month: '10902200',
+                No_of_new_shares_of_issuer_issued_during_the_month_pursuant_thereto:
+                  'Nil',
+                No_of_new_shares_of_issuer_which_may_be_issued_pursuant_thereto_as_at_close_of_the_month:
+                  '57380000',
+                Stock_code: 'Nil',
+                Class_of_shares_issuable: 'Ordinary',
+                Subscription_price: 'HK$0.19',
+                EGM_approval_date: '24/02/2012',
+                Ordinary_shares: 'N/A',
+                Preference_shares: 'N/A',
+                Other_class: 'N/A',
+              },
+            ],
+          },
+        },
+      },
+      {
+        headline: 'Monthly Return',
+        url:
+          'http://www3.hkexnews.hk/listedco/listconews/GEM/2013/0204/GLN20130204153.pdf',
+        file_id: 356,
+        release_time: 1359986700,
+        result: {
+          items: ['warrants', 'convertiables'],
+          warrants: {
+            headers: [
+              'Description_of_warrants',
+              'Currency_of_nominal_value',
+              'Nominal_value_at_close_of_preceding_month',
+              'Exercised_during_the_month',
+              'Nominal_value_at_close_of_the_month',
+              'No_of_new_shares_of_issuer_issued_during_the_month_pursuant_thereto',
+              'No_of_new_shares_of_issuer_which_may_be_issued_pursuant_thereto_as_at_close_of_the_month',
+              'Date_of_expiry',
+              'Stock_code',
+              'Class_of_shares_issuable',
+              'Subscription_price',
+              'EGM_approval_date',
+              'Ordinary_shares',
+              'Preference_shares',
+              'Other_class',
+            ],
+            index: 0,
+            records: [
+              {
+                Date_of_expiry: '02/04/2015',
+                Description_of_warrants:
+                  'Warrants (as defined in the circular of the Company dated 8 February 2012)',
+                Currency_of_nominal_value: 'HKD',
+                Nominal_value_at_close_of_preceding_month: '10902200',
+                Exercised_during_the_month: 'Nil',
+                Nominal_value_at_close_of_the_month: '10902200',
+                No_of_new_shares_of_issuer_issued_during_the_month_pursuant_thereto:
+                  'Nil',
+                No_of_new_shares_of_issuer_which_may_be_issued_pursuant_thereto_as_at_close_of_the_month:
+                  '57380000',
+                Stock_code: 'Nil',
+                Class_of_shares_issuable: 'Ordinary',
+                Subscription_price: 'HK$0.19',
+                EGM_approval_date: '24/02/2012',
+                Ordinary_shares: 'N/A',
+                Preference_shares: 'N/A',
+                Other_class: 'N/A',
+              },
+              {
+                Date_of_expiry: '02/04/2015',
+                Description_of_warrants:
+                  'Warrants (as defined in the circular of the Company dated 8 February 2012)',
+                Currency_of_nominal_value: 'HKD',
+                Nominal_value_at_close_of_preceding_month: '10902200',
+                Exercised_during_the_month: 'Nil',
+                Nominal_value_at_close_of_the_month: '10902200',
+                No_of_new_shares_of_issuer_issued_during_the_month_pursuant_thereto:
+                  'Nil',
+                No_of_new_shares_of_issuer_which_may_be_issued_pursuant_thereto_as_at_close_of_the_month:
+                  '57380000',
+                Stock_code: 'Nil',
+                Class_of_shares_issuable: 'Ordinary',
+                Subscription_price: 'HK$0.19',
+                EGM_approval_date: '24/02/2012',
+                Ordinary_shares: 'N/A',
+                Preference_shares: 'N/A',
+                Other_class: 'N/A',
+              },
+            ],
+          },
+          convertiables: {
+            headers: [
+              'Description_of_warrants',
+              'Currency_of_nominal_value',
+              'Nominal_value_at_close_of_preceding_month',
+              'Exercised_during_the_month',
+              'Nominal_value_at_close_of_the_month',
+              'No_of_new_shares_of_issuer_issued_during_the_month_pursuant_thereto',
+              'No_of_new_shares_of_issuer_which_may_be_issued_pursuant_thereto_as_at_close_of_the_month',
+              'Date_of_expiry',
+              'Stock_code',
+              'Class_of_shares_issuable',
+              'Subscription_price',
+              'EGM_approval_date',
+              'Ordinary_shares',
+              'Preference_shares',
+              'Other_class',
+            ],
+            index: 0,
+            records: [
+              {
+                Date_of_expiry: '02/04/2015',
+                Description_of_warrants:
+                  'Warrants (as defined in the circular of the Company dated 8 February 2012)',
+                Currency_of_nominal_value: 'HKD',
+                Nominal_value_at_close_of_preceding_month: '10902200',
+                Exercised_during_the_month: 'Nil',
+                Nominal_value_at_close_of_the_month: '10902200',
+                No_of_new_shares_of_issuer_issued_during_the_month_pursuant_thereto:
+                  'Nil',
+                No_of_new_shares_of_issuer_which_may_be_issued_pursuant_thereto_as_at_close_of_the_month:
+                  '57380000',
+                Stock_code: 'Nil',
+                Class_of_shares_issuable: 'Ordinary',
+                Subscription_price: 'HK$0.19',
+                EGM_approval_date: '24/02/2012',
+                Ordinary_shares: 'N/A',
+                Preference_shares: 'N/A',
+                Other_class: 'N/A',
+              },
+              {
+                Date_of_expiry: '02/04/2015',
+                Description_of_warrants:
+                  'Warrants (as defined in the circular of the Company dated 8 February 2012)',
+                Currency_of_nominal_value: 'HKD',
+                Nominal_value_at_close_of_preceding_month: '10902200',
+                Exercised_during_the_month: 'Nil',
+                Nominal_value_at_close_of_the_month: '10902200',
+                No_of_new_shares_of_issuer_issued_during_the_month_pursuant_thereto:
+                  'Nil',
+                No_of_new_shares_of_issuer_which_may_be_issued_pursuant_thereto_as_at_close_of_the_month:
+                  '57380000',
+                Stock_code: 'Nil',
+                Class_of_shares_issuable: 'Ordinary',
+                Subscription_price: 'HK$0.19',
+                EGM_approval_date: '24/02/2012',
+                Ordinary_shares: 'N/A',
+                Preference_shares: 'N/A',
+                Other_class: 'N/A',
+              },
+            ],
+          },
+        },
+      },
+    ],
+  },
+};

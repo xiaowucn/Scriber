@@ -1,0 +1,79 @@
+$block-table: #8470ff;
+$block-paragraph: #1f78b4;
+$block-footer: #fb9a98;
+$block-header: #33a02c;
+$block-footnote: #fdc06f;
+$block-image: #cab2d6;
+$block-shape: #ff7e00;
+$block-list: #7ba23f;
+$block-caption: #b54434;
+$block-title: #64363c;
+$block-author: #554236;
+$block-algorithm: #e83015;
+$block-equation: #8800f0;
+$block-bibitem: #880088;
+$block-stamp: #ba9132;
+$block-syllabus: #3500ff;
+$block-infographic: #ff00ff;
+
+.pdf-document-viewer {
+  ::v-deep .annotationEditorLayer {
+    .predict-annotation {
+      .editor-content {
+        stroke-dasharray: 0 !important;
+        stroke-width: 1 !important;
+      }
+
+      $block-types: (
+        paragraph: $block-paragraph,
+        page_header: $block-header,
+        page_footer: $block-footer,
+        image: $block-image,
+        shape: $block-shape,
+        stamp: $block-stamp,
+        title: $block-title,
+        caption: $block-caption,
+        author: $block-author,
+        list: $block-list,
+        algorithm: $block-algorithm,
+        bibitem: $block-bibitem,
+        footnote: $block-footnote,
+        equation: $block-equation,
+        table: $block-table,
+        syllabus: $block-syllabus,
+        infographic: $block-infographic,
+      );
+
+      @each $class, $color in $block-types {
+        &.#{$class} {
+          .editor-content {
+            stroke: $color;
+            stroke-width: 1 !important;
+            stroke-dasharray: unset !important;
+          }
+
+          .annotation-tag,
+          .annotation-tags {
+            background-color: $color !important;
+          }
+
+          @if $class ==table {
+            .table-cell {
+              fill: rgba($color, 0.5) !important;
+            }
+
+            .editor-content:first-of-type {
+              stroke: $color;
+            }
+
+            path.front-line {
+              stroke: #8470ff;
+              stroke-dasharray: unset;
+              stroke-width: 1px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

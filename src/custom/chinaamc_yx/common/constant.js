@@ -1,0 +1,88 @@
+export const TASK_SOURCE_CODE = {
+  LOCAL: 0,
+  XINGYUN: 1,
+};
+
+export const TASK_SOURCE = {
+  [TASK_SOURCE_CODE.LOCAL]: '本地上传',
+  [TASK_SOURCE_CODE.XINGYUN]: '星云系统',
+};
+
+export const UPLOAD_FILE_MAX_SIZE = 20;
+
+export const FILE_TYPES = {
+  1: '基金合同',
+  2: '招募说明书',
+  3: '托管协议',
+  4: '风险评估报告',
+  5: '核心要素表',
+  6: '请示函',
+  7: '港股人员说明',
+  8: '承诺函',
+};
+
+export const PROGRESS_STATUS_CODE = {
+  TO_BE_UPLOADED: 1000,
+  PARSING: 1100,
+  PARSED: 1110,
+  PARSE_FAILED: 1117,
+  AI_FAILED: 1111,
+  AI_DISABLE: 1112,
+  AI_DOING: 1113,
+  DIFF_FAILED: 1114,
+  DIFF_DONE: 1115,
+  DIFF_DOING: 1116,
+};
+
+export const PROGRESS_STATUS = {
+  [PROGRESS_STATUS_CODE.TO_BE_UPLOADED]: '文档待上传',
+  [PROGRESS_STATUS_CODE.PARSING]: '进行中',
+  [PROGRESS_STATUS_CODE.PARSED]: '进行中',
+  [PROGRESS_STATUS_CODE.PARSE_FAILED]: '失败',
+  [PROGRESS_STATUS_CODE.AI_FAILED]: '失败',
+  [PROGRESS_STATUS_CODE.AI_DISABLE]: '失败',
+  [PROGRESS_STATUS_CODE.AI_DOING]: '进行中',
+  [PROGRESS_STATUS_CODE.DIFF_FAILED]: '失败',
+  [PROGRESS_STATUS_CODE.DIFF_DONE]: '成功',
+  [PROGRESS_STATUS_CODE.DIFF_DOING]: '进行中',
+};
+
+export const FILE_STATUS_CODE = {
+  PDF_PARSING: 0,
+  PDF_FAILED: 1,
+  AI_DISABLE: 2,
+  AI_FAILED: 3,
+  AI_TODO: 4,
+  AI_DOING: 5,
+  AI_FINISH: 6,
+  CMP_FAILED: 7,
+  CMP_DOING: 8,
+  CMP_FINISH: 9,
+};
+
+export const FILE_STATUS = {
+  [FILE_STATUS_CODE.PDF_PARSING]: '解析中',
+  [FILE_STATUS_CODE.PDF_FAILED]: '解析失败',
+  [FILE_STATUS_CODE.AI_DISABLE]: '模型未启用',
+  [FILE_STATUS_CODE.AI_FAILED]: '预测失败',
+  [FILE_STATUS_CODE.AI_TODO]: '待预测',
+  [FILE_STATUS_CODE.AI_DOING]: '预测中',
+  [FILE_STATUS_CODE.AI_FINISH]: '预测成功',
+  [FILE_STATUS_CODE.CMP_FAILED]: '子文档比对失败, 请检查或重试',
+  [FILE_STATUS_CODE.CMP_DOING]: '子文档比对中, 请稍后...',
+  [FILE_STATUS_CODE.CMP_FINISH]: '子文档比对成功',
+};
+
+export const CHAPTER_STATUS_CODE = {
+  DEFAULT: 0,
+  FAILED: -2,
+  DOING: 1,
+  DONE: 2,
+};
+
+export const CHAPTER_STATUS = {
+  [CHAPTER_STATUS_CODE.DEFAULT]: '章节比对未开始',
+  [CHAPTER_STATUS_CODE.FAILED]: '章节比对失败',
+  [CHAPTER_STATUS_CODE.DOING]: '章节比对中',
+  [CHAPTER_STATUS_CODE.DONE]: '章节比对成功',
+};

@@ -1,0 +1,166 @@
+$red: #fc3c38;
+$orange: #fdd34e;
+$blue: #409eff;
+$green: #3db005;
+
+.color {
+  &.blue {
+    color: $blue;
+  }
+  &.red {
+    color: $red;
+  }
+  &.orange {
+    color: $orange;
+  }
+  &.green {
+    color: $green;
+  }
+}
+
+.cmfchina-page {
+  height: 100vh !important;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+
+  > .header {
+    position: sticky;
+    top: 0;
+    z-index: 9;
+    background-color: #fff;
+
+    .el-menu {
+      min-width: 1080px;
+    }
+  }
+
+  .data-panorama,
+  .project-container,
+  .schema-container,
+  .custom-rules,
+  .file-filed-container,
+  .model-config-page,
+  .business-group-management,
+  .mail-config {
+    display: flex;
+    flex: 1;
+    flex-flow: column;
+    overflow: hidden;
+    padding: 0 20px;
+  }
+
+  .statistics {
+    .el-tabs__content {
+      overflow: initial;
+      .el-table {
+        overflow: initial;
+        .el-table__header-wrapper {
+          position: sticky;
+          top: 61px;
+          z-index: 9;
+        }
+      }
+    }
+  }
+
+  .el-pagination {
+    padding: 20px 0;
+    text-align: center;
+  }
+
+  .project-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .project-viewer {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+
+    > div {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  .file-viewer,
+  .file-search-container {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    overflow: hidden;
+
+    .detail-container {
+      overflow: hidden;
+    }
+
+    .el-main {
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+    }
+
+    .file-list-wrapper {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+    }
+  }
+
+  .pdf-document-viewer {
+    .annotationEditorLayer {
+      .annotationEditor {
+        &[data-subtype='Square'] {
+          .editor-content {
+            stroke: #999;
+            stroke-width: 2 !important;
+            stroke-dasharray: 5 !important;
+          }
+
+          .annotation-tag {
+            display: none;
+          }
+
+          &.predict-annotation {
+            .annotation-tag {
+              display: block;
+            }
+          }
+
+          &.red {
+            z-index: 998 !important;
+            .editor-content {
+              stroke: #fc3c38 !important;
+              stroke-width: 2;
+              stroke-dasharray: 5;
+            }
+          }
+
+          &.active {
+            z-index: 999 !important;
+            &:not(.red) {
+              .editor-content {
+                stroke: #16a63b;
+              }
+            }
+            .annotation-tag {
+              display: block;
+            }
+          }
+        }
+
+        &.editing {
+          .editor-content {
+            stroke: #16a63b;
+          }
+        }
+      }
+    }
+  }
+}

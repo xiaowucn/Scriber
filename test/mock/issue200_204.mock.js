@@ -1,0 +1,663 @@
+export const answerTree = {
+  meta: {
+    _index: 23,
+    _partType: 'root',
+    _type: { label: 'iswear_schema', type: 'group' },
+    _isHide: false,
+    _nodeIndex: 1001,
+    _parent: [],
+    _path: ['iswear_schema'],
+  },
+  data: { label: 'iswear_schema', type: 'iswear_schema' },
+  children: [
+    {
+      data: {
+        label: '描述',
+        type: '文本',
+        required: false,
+        multi: true,
+        words: '',
+      },
+      meta: {
+        _path: ['iswear_schema', '文本'],
+        _index: 24,
+        _partType: 'top',
+        _type: { label: '文本', type: 'basic' },
+        _isHide: false,
+        _nodeIndex: 1002,
+        _parent: ['iswear_schema'],
+      },
+      children: [],
+    },
+    {
+      data: {
+        label: '名称',
+        type: '文本',
+        required: false,
+        multi: false,
+        words: '',
+      },
+      meta: {
+        _path: ['iswear_schema', '文本'],
+        _index: 25,
+        _partType: 'top',
+        _type: { label: '文本', type: 'basic' },
+        _isHide: false,
+        _nodeIndex: 1003,
+        _parent: ['iswear_schema'],
+      },
+      children: [],
+    },
+    {
+      data: {
+        label: '资产负债表',
+        type: '表',
+        required: false,
+        multi: false,
+        words: '',
+      },
+      meta: {
+        _path: ['iswear_schema', '表'],
+        _index: 26,
+        _partType: 'top',
+        _type: { label: '表', type: 'group' },
+        _isHide: false,
+        _nodeIndex: 1004,
+        _parent: ['iswear_schema'],
+      },
+      children: [
+        {
+          data: {
+            label: '主表',
+            required: false,
+            multi: false,
+            type: '子表',
+            words: '',
+          },
+          meta: {
+            _index: 28,
+            _path: ['iswear_schema', '表', '子表'],
+            _partType: 'normal.schema',
+            _type: { label: '子表', type: 'group' },
+            _isHide: false,
+            _nodeIndex: 1005,
+            _parent: ['iswear_schema', '资产负债表'],
+          },
+          children: [
+            {
+              data: {
+                label: '正文',
+                required: false,
+                multi: true,
+                type: '文本',
+                words: '',
+              },
+              meta: {
+                _index: 31,
+                _path: ['iswear_schema', '表', '子表', '文本'],
+                _partType: 'normal.schema',
+                _type: { label: '文本', type: 'basic' },
+                _isHide: false,
+                _nodeIndex: 1006,
+                _parent: ['iswear_schema', '资产负债表', '主表'],
+              },
+              children: [],
+            },
+            {
+              data: {
+                label: '标题',
+                required: false,
+                multi: false,
+                type: '文本',
+                words: '',
+              },
+              meta: {
+                _index: 32,
+                _path: ['iswear_schema', '表', '子表', '文本'],
+                _partType: 'normal.schema',
+                _type: { label: '文本', type: 'basic' },
+                _isHide: false,
+                _nodeIndex: 1007,
+                _parent: ['iswear_schema', '资产负债表', '主表'],
+              },
+              children: [],
+            },
+          ],
+        },
+        {
+          data: {
+            label: '子表',
+            required: false,
+            multi: false,
+            type: '子表',
+            words: '',
+          },
+          meta: {
+            _index: 29,
+            _path: ['iswear_schema', '表', '子表'],
+            _partType: 'normal.schema',
+            _type: { label: '子表', type: 'group' },
+            _isHide: false,
+            _nodeIndex: 1008,
+            _parent: ['iswear_schema', '资产负债表'],
+          },
+          children: [
+            {
+              data: {
+                label: '正文',
+                required: false,
+                multi: true,
+                type: '文本',
+                words: '',
+              },
+              meta: {
+                _index: 31,
+                _path: ['iswear_schema', '表', '子表', '文本'],
+                _partType: 'normal.schema',
+                _type: { label: '文本', type: 'basic' },
+                _isHide: false,
+                _nodeIndex: 1009,
+                _parent: ['iswear_schema', '资产负债表', '子表'],
+              },
+              children: [],
+            },
+            {
+              data: {
+                label: '标题',
+                required: false,
+                multi: false,
+                type: '文本',
+                words: '',
+              },
+              meta: {
+                _index: 32,
+                _path: ['iswear_schema', '表', '子表', '文本'],
+                _partType: 'normal.schema',
+                _type: { label: '文本', type: 'basic' },
+                _isHide: false,
+                _nodeIndex: 1010,
+                _parent: ['iswear_schema', '资产负债表', '子表'],
+              },
+              children: [],
+            },
+          ],
+        },
+      ],
+    },
+  ],
+  childrenGroup: [
+    [
+      {
+        data: {
+          label: '描述',
+          type: '文本',
+          required: false,
+          multi: true,
+          words: '',
+        },
+        meta: {
+          _path: ['iswear_schema', '文本'],
+          _index: 24,
+          _partType: 'top',
+          _type: { label: '文本', type: 'basic' },
+          _isHide: false,
+          _nodeIndex: 1002,
+          _parent: ['iswear_schema'],
+        },
+        children: [],
+      },
+      {
+        data: {
+          label: '名称',
+          type: '文本',
+          required: false,
+          multi: false,
+          words: '',
+        },
+        meta: {
+          _path: ['iswear_schema', '文本'],
+          _index: 25,
+          _partType: 'top',
+          _type: { label: '文本', type: 'basic' },
+          _isHide: false,
+          _nodeIndex: 1003,
+          _parent: ['iswear_schema'],
+        },
+        children: [],
+      },
+      {
+        data: {
+          label: '资产负债表',
+          type: '表',
+          required: false,
+          multi: false,
+          words: '',
+        },
+        meta: {
+          _path: ['iswear_schema', '表'],
+          _index: 26,
+          _partType: 'top',
+          _type: { label: '表', type: 'group' },
+          _isHide: false,
+          _nodeIndex: 1004,
+          _parent: ['iswear_schema'],
+        },
+        children: [
+          {
+            data: {
+              label: '主表',
+              required: false,
+              multi: false,
+              type: '子表',
+              words: '',
+            },
+            meta: {
+              _index: 28,
+              _path: ['iswear_schema', '表', '子表'],
+              _partType: 'normal.schema',
+              _type: { label: '子表', type: 'group' },
+              _isHide: false,
+              _nodeIndex: 1005,
+              _parent: ['iswear_schema', '资产负债表'],
+            },
+            children: [
+              {
+                data: {
+                  label: '正文',
+                  required: false,
+                  multi: true,
+                  type: '文本',
+                  words: '',
+                },
+                meta: {
+                  _index: 31,
+                  _path: ['iswear_schema', '表', '子表', '文本'],
+                  _partType: 'normal.schema',
+                  _type: { label: '文本', type: 'basic' },
+                  _isHide: false,
+                  _nodeIndex: 1006,
+                  _parent: ['iswear_schema', '资产负债表', '主表'],
+                },
+                children: [],
+              },
+              {
+                data: {
+                  label: '标题',
+                  required: false,
+                  multi: false,
+                  type: '文本',
+                  words: '',
+                },
+                meta: {
+                  _index: 32,
+                  _path: ['iswear_schema', '表', '子表', '文本'],
+                  _partType: 'normal.schema',
+                  _type: { label: '文本', type: 'basic' },
+                  _isHide: false,
+                  _nodeIndex: 1007,
+                  _parent: ['iswear_schema', '资产负债表', '主表'],
+                },
+                children: [],
+              },
+            ],
+          },
+          {
+            data: {
+              label: '子表',
+              required: false,
+              multi: false,
+              type: '子表',
+              words: '',
+            },
+            meta: {
+              _index: 29,
+              _path: ['iswear_schema', '表', '子表'],
+              _partType: 'normal.schema',
+              _type: { label: '子表', type: 'group' },
+              _isHide: false,
+              _nodeIndex: 1008,
+              _parent: ['iswear_schema', '资产负债表'],
+            },
+            children: [
+              {
+                data: {
+                  label: '正文',
+                  required: false,
+                  multi: true,
+                  type: '文本',
+                  words: '',
+                },
+                meta: {
+                  _index: 31,
+                  _path: ['iswear_schema', '表', '子表', '文本'],
+                  _partType: 'normal.schema',
+                  _type: { label: '文本', type: 'basic' },
+                  _isHide: false,
+                  _nodeIndex: 1009,
+                  _parent: ['iswear_schema', '资产负债表', '子表'],
+                },
+                children: [],
+              },
+              {
+                data: {
+                  label: '标题',
+                  required: false,
+                  multi: false,
+                  type: '文本',
+                  words: '',
+                },
+                meta: {
+                  _index: 32,
+                  _path: ['iswear_schema', '表', '子表', '文本'],
+                  _partType: 'normal.schema',
+                  _type: { label: '文本', type: 'basic' },
+                  _isHide: false,
+                  _nodeIndex: 1010,
+                  _parent: ['iswear_schema', '资产负债表', '子表'],
+                },
+                children: [],
+              },
+            ],
+          },
+        ],
+        childrenGroup: [
+          [
+            {
+              data: {
+                label: '主表',
+                required: false,
+                multi: false,
+                type: '子表',
+                words: '',
+              },
+              meta: {
+                _index: 28,
+                _path: ['iswear_schema', '表', '子表'],
+                _partType: 'normal.schema',
+                _type: { label: '子表', type: 'group' },
+                _isHide: false,
+                _nodeIndex: 1005,
+                _parent: ['iswear_schema', '资产负债表'],
+              },
+              children: [
+                {
+                  data: {
+                    label: '正文',
+                    required: false,
+                    multi: true,
+                    type: '文本',
+                    words: '',
+                  },
+                  meta: {
+                    _index: 31,
+                    _path: ['iswear_schema', '表', '子表', '文本'],
+                    _partType: 'normal.schema',
+                    _type: { label: '文本', type: 'basic' },
+                    _isHide: false,
+                    _nodeIndex: 1006,
+                    _parent: ['iswear_schema', '资产负债表', '主表'],
+                  },
+                  children: [],
+                },
+                {
+                  data: {
+                    label: '标题',
+                    required: false,
+                    multi: false,
+                    type: '文本',
+                    words: '',
+                  },
+                  meta: {
+                    _index: 32,
+                    _path: ['iswear_schema', '表', '子表', '文本'],
+                    _partType: 'normal.schema',
+                    _type: { label: '文本', type: 'basic' },
+                    _isHide: false,
+                    _nodeIndex: 1007,
+                    _parent: ['iswear_schema', '资产负债表', '主表'],
+                  },
+                  children: [],
+                },
+              ],
+              childrenGroup: [
+                [
+                  {
+                    data: {
+                      label: '正文',
+                      required: false,
+                      multi: true,
+                      type: '文本',
+                      words: '',
+                    },
+                    meta: {
+                      _index: 31,
+                      _path: ['iswear_schema', '表', '子表', '文本'],
+                      _partType: 'normal.schema',
+                      _type: { label: '文本', type: 'basic' },
+                      _isHide: false,
+                      _nodeIndex: 1006,
+                      _parent: ['iswear_schema', '资产负债表', '主表'],
+                    },
+                    children: [],
+                  },
+                  {
+                    data: {
+                      label: '标题',
+                      required: false,
+                      multi: false,
+                      type: '文本',
+                      words: '',
+                    },
+                    meta: {
+                      _index: 32,
+                      _path: ['iswear_schema', '表', '子表', '文本'],
+                      _partType: 'normal.schema',
+                      _type: { label: '文本', type: 'basic' },
+                      _isHide: false,
+                      _nodeIndex: 1007,
+                      _parent: ['iswear_schema', '资产负债表', '主表'],
+                    },
+                    children: [],
+                  },
+                ],
+              ],
+            },
+            {
+              data: {
+                label: '子表',
+                required: false,
+                multi: false,
+                type: '子表',
+                words: '',
+              },
+              meta: {
+                _index: 29,
+                _path: ['iswear_schema', '表', '子表'],
+                _partType: 'normal.schema',
+                _type: { label: '子表', type: 'group' },
+                _isHide: false,
+                _nodeIndex: 1008,
+                _parent: ['iswear_schema', '资产负债表'],
+              },
+              children: [
+                {
+                  data: {
+                    label: '正文',
+                    required: false,
+                    multi: true,
+                    type: '文本',
+                    words: '',
+                  },
+                  meta: {
+                    _index: 31,
+                    _path: ['iswear_schema', '表', '子表', '文本'],
+                    _partType: 'normal.schema',
+                    _type: { label: '文本', type: 'basic' },
+                    _isHide: false,
+                    _nodeIndex: 1009,
+                    _parent: ['iswear_schema', '资产负债表', '子表'],
+                  },
+                  children: [],
+                },
+                {
+                  data: {
+                    label: '标题',
+                    required: false,
+                    multi: false,
+                    type: '文本',
+                    words: '',
+                  },
+                  meta: {
+                    _index: 32,
+                    _path: ['iswear_schema', '表', '子表', '文本'],
+                    _partType: 'normal.schema',
+                    _type: { label: '文本', type: 'basic' },
+                    _isHide: false,
+                    _nodeIndex: 1010,
+                    _parent: ['iswear_schema', '资产负债表', '子表'],
+                  },
+                  children: [],
+                },
+              ],
+              childrenGroup: [
+                [
+                  {
+                    data: {
+                      label: '正文',
+                      required: false,
+                      multi: true,
+                      type: '文本',
+                      words: '',
+                    },
+                    meta: {
+                      _index: 31,
+                      _path: ['iswear_schema', '表', '子表', '文本'],
+                      _partType: 'normal.schema',
+                      _type: { label: '文本', type: 'basic' },
+                      _isHide: false,
+                      _nodeIndex: 1009,
+                      _parent: ['iswear_schema', '资产负债表', '子表'],
+                    },
+                    children: [],
+                  },
+                  {
+                    data: {
+                      label: '标题',
+                      required: false,
+                      multi: false,
+                      type: '文本',
+                      words: '',
+                    },
+                    meta: {
+                      _index: 32,
+                      _path: ['iswear_schema', '表', '子表', '文本'],
+                      _partType: 'normal.schema',
+                      _type: { label: '文本', type: 'basic' },
+                      _isHide: false,
+                      _nodeIndex: 1010,
+                      _parent: ['iswear_schema', '资产负债表', '子表'],
+                    },
+                    children: [],
+                  },
+                ],
+              ],
+            },
+          ],
+        ],
+      },
+    ],
+  ],
+};
+
+export const answer = [
+  {
+    key: '["iswear_schema:0","资产负债表:0","主表:0","正文:0"]',
+    data: [
+      {
+        boxes: [
+          {
+            box: {
+              box_left: 422.3141011840689,
+              box_top: 657.3468245425189,
+              box_right: 494.0712594187298,
+              box_bottom: 683.6150699677072,
+            },
+            page: 1,
+            text: 'LIMITED',
+          },
+        ],
+        handleType: 'wireframe',
+      },
+    ],
+    value: null,
+    schema: {
+      data: {
+        label: '正文',
+        required: false,
+        multi: true,
+        type: '文本',
+        words: '',
+      },
+    },
+  },
+  {
+    key: '["iswear_schema:0","资产负债表:0","主表:1","正文:0"]',
+    data: [
+      {
+        boxes: [
+          {
+            box: {
+              box_left: 250.60947255113024,
+              box_top: 745.1212055974166,
+              box_right: 353.11969860064585,
+              box_bottom: 762.4198062432723,
+            },
+            page: 1,
+            text: 'Stock Code: 0113',
+          },
+        ],
+        handleType: 'wireframe',
+      },
+    ],
+    value: null,
+    schema: {
+      data: {
+        label: '正文',
+        required: false,
+        multi: true,
+        type: '文本',
+        words: '',
+      },
+    },
+  },
+  {
+    key: '["iswear_schema:0","资产负债表:1","主表:0","标题:0"]',
+    data: [
+      {
+        boxes: [
+          {
+            box: {
+              box_left: 100.68826695371368,
+              box_top: 655.4247578040904,
+              box_right: 504.9629709364909,
+              box_bottom: 688.0998923573735,
+            },
+            page: 1,
+            text: 'DICKSONCONCEPTS(INTERNATIONAL)LIMITED',
+          },
+        ],
+        handleType: 'wireframe',
+      },
+    ],
+    value: null,
+    schema: {
+      data: {
+        label: '标题',
+        required: false,
+        multi: false,
+        type: '文本',
+        words: '',
+      },
+    },
+  },
+];

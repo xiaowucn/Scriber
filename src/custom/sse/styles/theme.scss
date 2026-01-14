@@ -1,0 +1,44 @@
+$primary-color: #9c2c2c;
+$menu-active-bg-color: rgba(255, 255, 255, 0.4);
+
+.el-button--primary {
+  background: $primary-color;
+  border-color: $primary-color;
+  &:hover {
+    opacity: 0.9;
+  }
+}
+.sse-poc-header {
+  background-color: $primary-color;
+  ::v-deep .left {
+    .el-menu {
+      background-color: $primary-color;
+      .el-menu-item {
+        &.is-active {
+          border-bottom: none;
+          background: $menu-active-bg-color;
+        }
+        &:hover {
+          background: $menu-active-bg-color;
+        }
+      }
+    }
+  }
+}
+::v-deep .el-pagination {
+  &.is-background {
+    .el-pager {
+      li {
+        &:hover {
+          color: $primary-color;
+        }
+        &:not(.disabled) {
+          &.active {
+            background-color: $primary-color;
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+}

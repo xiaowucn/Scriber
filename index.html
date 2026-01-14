@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>
+    <%= title %>
+  </title>
+  <% if (favicon) { %>
+    <link rel="icon" href="<%= favicon %>" />
+    <% } %>
+</head>
+
+<body>
+  <noscript>
+    <strong>We're sorry but front_bankstatements doesn't work properly without
+      JavaScript enabled. Please enable it to continue.</strong>
+  </noscript>
+  <div id="app"></div>
+  <div class="git-revision-container" style="display: none">
+    <span>App dist: <%= env %></span>
+    <span>Git branch: <%= git.branch %></span>
+    <span>Git date: <%= git.date %></span>
+    <span>Git short commit hash: <%= git.short %></span>
+    <span>Git long commit hash: <em id="git-commit-hash"><%= git.long %></em></span>
+  </div>
+
+</body>
+
+</html>
