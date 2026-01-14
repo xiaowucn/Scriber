@@ -4,7 +4,7 @@ UID := $(shell id -u)
 GID := $(shell id -g)
 PWD := $(shell pwd)
 PREFIX := build_task_to_BUILD_
-IMAGE := registry.cheftin.cn/p/node22
+IMAGE := harbor.wujiaxing.top/library/node22:latest
 
 target=szse szse_ipo sse csc ecitic citics_tg ccxi ccxi_contract hkex stencil ht csc_octopus cgs \
 	gffund chinaamc stronghold cmfchina cms dist chinaamc_yx nafmii zts

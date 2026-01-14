@@ -7,13 +7,6 @@ run() {
   "$@"
   _exit_code=$?
   if [ ${_exit_code} -ne 0 ]; then
-    if [ -f "/data/ci/fitout/common/get_commit_users.py" ]; then
-      MENTION_USERS=$(python3 /data/ci/fitout/common/get_commit_users.py)
-    fi
-    if [ -f "/data/ci/fitout/autodoc/send_mm_msg.sh" ]; then
-      GO_LOG_URL="https://gocd.paodingai.com/go/tab/build/detail/scriber_front/${GO_PIPELINE_COUNTER}/build/${GO_STAGE_COUNTER}/build"
-      bash /data/ci/fitout/autodoc/send_mm_msg.sh http://mm.paodingai.com/hooks/xffd4wkndpnjubqd9z9puzoxaa scriber "| 代码提交人 | 错误信息 | 构建日志地址 |\n| --- | --- | --- |\n| :facebug: *${MENTION_USERS}* | :x: **Scriber Front Build Error** | :point_right: [*click the jump*](${GO_LOG_URL}) |"
-    fi
     echo "Error: exec $* with exit code ${_exit_code}."
     exit ${_exit_code}
   fi
